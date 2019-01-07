@@ -4,7 +4,7 @@ This project explores ways in which Snorkel may be combined with non-textual dat
 
 ## Report
 
-The original report can be found in TBC
+The original report can be found [here](https://github.com/dmitrykazhdan/Multi-Modal-Training-Data-Creation-with-Snorkel/blob/master/Report.pdf).
 
 
 ## Relevant Resources
@@ -22,7 +22,7 @@ Note: The latter two APIs will not work directly out-of-the-box, and have to be 
 
 partition_data.py - contains code that partitions the multi-modal dataset, creating the appropriate directory structure and extracting training, testing and validation sample subsets.
 
-snorkelLabelGeneration.ipynb - Notebook, outlining how Snorkel may be used to generate data labels using both text and image modalities. Note that this notebook has to be run from the Snorkel environment (see https://github.com/HazyResearch/snorkel#quick-start) for more info.
+snorkelLabelGeneration.ipynb - Notebook, outlining how Snorkel may be used to generate data labels using both text and image modalities. Note that this notebook has to be run from the Snorkel environment (see https://github.com/HazyResearch/snorkel#quick-start for more info).
 
 execute_models.py - trains all of the relevant models one after the other in a sequential fashion.
 
@@ -33,6 +33,6 @@ generate_performance_metrics.py - contains code for processing the confusion mat
 The anticipated sequence of steps is as follows:
   1) Download and setup the multi-modal models and dataset
   2) Pre-process the dataset using 'partition_data.py'
-  3) Generate labels using 'snorkelLabelGeneration.ipynb' and image-clustering
+  3) Generate labels using 'snorkelLabelGeneration.ipynb' and the image-clustering API
   4) Train and test the models on the generated dataset using 'execute_models.py'
   5) Investigate performance using 'generate_performance_metrics.py'
